@@ -1,0 +1,28 @@
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
+    <a style="color: #6f42c1;font-weight: 900;" class="navbar-brand mr-auto mr-lg-0">Propcarer</a>
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <div class="col-md-10"></div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </nav> 
+<main role="main" class="container" style="height: 550px;margin-top: 5%;">
+  
+<div class="card"  *ngFor="let item of userServices; let i = index">
+  <div class="card-header">
+    {{item.username}}
+  </div>
+  <div class="card-body">
+    <p class="card-text" *ngFor="let itemServiceDesc of item.serviceDesc; let j = index">{{j+1}}.{{itemServiceDesc}}</p>
+  </div>
+</div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted"> RA Software Solutions-2020</span>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
+      <script src="offcanvas.js"></script></body>
